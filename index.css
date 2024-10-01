@@ -1,0 +1,214 @@
+.banner {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    /* margin-bottom: 0px; */
+}
+
+.banner-video {
+    width: 100%;
+    height: 90%;
+    object-fit: cover; /* Ensures the video covers the entire banner */
+    /* margin-bottom: 0px; */
+
+}
+.banner-video1 {
+    width: 100%;
+    height: 90%;
+    border-radius: 20px;
+    /* object-fit: cover; Ensures the video covers the entire banner */
+    /* margin-bottom: 0px; */
+
+}
+
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    /* margin-bottom: 0px; */
+
+}
+.h{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.text-with-lines {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centers the content horizontally */
+    font-size: 2rem;
+    color: #524e4e; /* Text color */
+}
+
+.text-with-lines::before,
+.text-with-lines::after {
+    content: '';
+    width: 20rem; /* Adjust this value to control the length of the lines */
+    border-bottom: 2px solid #128f55; /* Change the line color here */
+    margin: 0 10px; /* Space between line and text */
+}
+
+.bt{
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    padding: 15px;
+}
+.bt:hover{
+    background-color: white;
+    color: black;
+}
+.features-list {
+    list-style-type: none; /* Removes bullet points */
+    padding: 0; /* Removes padding */
+    margin: 15px 0; /* Adds margin above and below the list */
+}
+
+.features-list li {
+    display: block; /* Ensures each list item appears on a new line */
+    margin-bottom: 10px; /* Space between list items */
+}
+
+.features-list i {
+    margin-right: 10px; /* Space between icon and text */
+    color: #0d0e0d; /* Icon color */
+}
+.image-container {
+    position: relative; /* Position relative for absolute positioning of overlay */
+    display: inline-block; /* Allows setting width and height */
+}
+
+.image-container img {
+    width: 100%; /* Makes the image responsive */
+    height: auto; /* Maintains aspect ratio */
+}
+
+.overlay {
+    position: absolute; /* Position overlay over the image */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: white; /* Text color */
+    display: flex; /* Flexbox for centering content */
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.image-container:hover .overlay {
+    opacity: 1; /* Show overlay on hover */
+}
+.button-container {
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center the button horizontally */
+    margin-top: 20px; /* Optional: adds space above the button */
+}
+
+.arrow-btn {
+    background-color: #0d0e0d; /* Button background color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Padding for button */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    display: inline-flex; /* Flex to align text and icon */
+    align-items: center; /* Vertically center the text and icon */
+    border-radius: 20px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.arrow-btn:hover {
+    background-color: #bebcbc; /* Darker shade on hover */
+    color: black;
+}
+
+.arrow-icon {
+    margin-left: 8px; /* Space between text and icon */
+}
+.text-with-lines {
+    text-align: center;
+    position: relative;
+    margin: 20px 0; /* Space around the heading */
+}
+
+.text-with-lines::before,
+.text-with-lines::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 2px;
+    background-color: #128f55; /* Color for the lines */
+}
+
+.text-with-lines::before {
+    left: 0;
+}
+
+.text-with-lines::after {
+    right: 0;
+}
+
+.service-icon {
+    margin-right: 10px; /* Space between icon and text */
+}
+
+.text-with-lines1 {
+    text-align: center;
+    position: relative;
+    margin: 15px 0; /* Space around the heading */
+}
+
+.text-with-lines1::before,
+.text-with-lines1::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 2px;
+    background-color: #128f55; /* Color for the lines */
+}
+
+.text-with-lines1::before {
+    left: 10px;
+}
+
+.text-with-lines1::after {
+    right: 0;
+}
+.contact-info {
+    margin-top: 20px; /* Space above contact info */
+}
+
+.form-container {
+    margin-top: 20px; /* Space above form */
+}
+
+.icon-input {
+    position: relative; /* Position relative for icon placement */
+}
+
+.icon-input i {
+    position: absolute; /* Position the icon */
+    left: 10px; /* Space from left */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust icon position */
+    color: #888; /* Icon color */
+}
+
+.icon-input input {
+    padding-left: 30px; /* Space for icon in input */
+}
+#bg{
+    background: rgb(250, 250, 250);
+}
+
+
+

@@ -1,0 +1,98 @@
+.colorful-icon {
+    font-size: 24px;
+    background: linear-gradient(45deg, #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+p {
+    font-size: 16px;
+    margin: 0;
+}
+
+i {
+    margin-right: 8px;
+}
+.p{
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 200;
+    
+}
+ul{
+    /* margin-top: 10px; */
+    display: flex;
+    justify-content: space-between;
+}
+.nav{
+    margin-top: 10px;
+}
+
+ul li{
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+@media (max-width: 576px) {
+    .nav {
+        padding: 5px 0;
+    }
+
+    .search-container input {
+        width: 80%;
+    }
+
+    .nav p {
+        text-align: center;
+    }
+}
+ul li a:hover{
+    color: white;
+    background: rgb(6, 65, 6);
+    border-radius: 20px;
+    padding: 6px;
+}
+.search-container{
+    margin-left: 90px;
+}
+input[type="text"] {
+    width: 200px;           /* Set a fixed width for the input */
+    padding: 5px;          /* Add some padding inside the input */
+    border: none;           /* Remove the default border */
+    outline: none;          /* Remove the blue outline when focused */
+    border-radius: 25px;     /* Rounded corners */
+    background-color: #f3f3f3; /* Light background color */
+    color: #333;            /* Text color */
+    font-size: 16px;        /* Adjust the font size */
+    transition: box-shadow 0.3s ease; /* Smooth transition for focus state */
+}
+
+input[type="text"]::placeholder {
+    color: #0e0e0e;            /* Style the placeholder text */
+    /* align-items: center; */
+}
+.nav i {
+    font-size: 20px;
+    color: black;
+}
+input[type="text"]:focus {
+    box-shadow: 0 0 5px #036931; /* Add a subtle shadow on focus */
+}
+.search-container .fa-search {
+    position: absolute;
+    top: 11.5%;
+    left: 71rem;
+    transform: translateY(-50%);
+    color: #aaa;
+}
+.search-container .fa-user{
+
+    position: absolute;
+    top: 11.5%;
+    left: 80rem;
+    transform: translateY(-50%);
+    color: #141414;
+}
